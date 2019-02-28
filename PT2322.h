@@ -67,9 +67,9 @@ public:
     void rearRightVolume(unsigned char rrv); 
     void subwooferVolume(unsigned char sv); 
     void masterVolume(unsigned char mv); 
-    void bass(unsigned char tb); 
-    void middle(unsigned char tm); 
-    void treble(unsigned char tt);
+    void bass(int tb); 
+    void middle(int tm); 
+    void treble(int tt);
 };
 
 #endif

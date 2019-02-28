@@ -184,21 +184,21 @@ void PT2322::masterVolume(unsigned char mv)
 }
 
 //range : +14 to -14dB, 2dB step   
-void PT2322::bass(unsigned char tb)   
+void PT2322::bass(int tb)   
 {   
     unsigned char tbv = toneLookup(tb);
     writeI2CChar(BASS_TONE_CONTROL | tbv);
 }      
    
 //range : +14 to -14dB, 2dB step   
-void PT2322::middle(unsigned char tm)   
+void PT2322::middle(int tm)   
 {   
     unsigned char tmv = toneLookup(tm);
     writeI2CChar(MIDDLE_TONE_CONTROL | tmv);
 }      
    
 //range : +14 to -14dB, 2dB step   
-void PT2322::treble(unsigned char tt)   
+void PT2322::treble(int tt)   
 {   
     unsigned char ttv = toneLookup(tt);
     writeI2CChar(TREBLE_TONE_CONTROL | ttv);
